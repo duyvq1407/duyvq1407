@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Cao đẳng FPT Polytechnic</title>
+    <link rel="icon" href="./assets/images/shortcuticon.webp" sizes="32x32">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="sub-header">
+            <nav class="nav">
+                <a href="index.html"><img src="./assets/images/logo1.png"></a>
+                <div class="nav__link">
+                    <i class="fas fa-times" onclick="closeNav()"></i>
+                    <ul>
+                        <li>
+                            <a href="index.html">TRANG CHỦ</a>
+                            <div class="nav-item__line"></div>
+                        </li>
+                        <li>
+                            <a href="about.html" style="color: red;">TUYỂN SINH<i class="fas fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu_item">
+                                    <a href="" class="sub-menu_link">Tuyển sinh 2021</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="" class="sub-menu_link">Đăng kí trực tuyến</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="" class="sub-menu_link">Học phí</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="" class="sub-menu_link">Trắc nghiệm nghề nghiệp</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="" class="sub-menu_link">Những điều cần biết <i
+                                            class="fas fa-chevron-right"></i>
+                                        <ul class="sub-menu-2">
+                                            <li class="sub-menu_item">
+                                                <a href="" class="sub-menu_link">Quy chế tuyển sinh</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="" class="sub-menu_link">Chính sách ưu đãi</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="" class="sub-menu_link">Phiếu đăng kí học</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="" class="sub-menu_link">Hướng dẫn nhập học</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="" class="sub-menu_link">Câu hỏi thường gặp</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="" class="sub-menu_link">Về FPT Education</a>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="nav-item__line" style="width: 100%;"></div>
+                        </li>
+                        <li>
+                            <a href="./course.html">CHƯƠNG TRÌNH ĐÀO TẠO<i class="fas fa-angle-down"></i></a>
+                            <div class="nav-item__line"></div>
+                            <ul class="sub-menu">
+                                <li class="sub-menu_item">
+                                    <a href="./course.html" class="sub-menu_link">Công nghệ thông tin <i
+                                            class="fas fa-chevron-right"></i>
+                                        <ul class="sub-menu-2">
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">Thiết kế Website</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">Thiết kế đồ họa</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">CNTT - Ứng dụng phần mềm</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">Lập trình máy tính - Thiết bị di
+                                                    động</a>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="./course.html" class="sub-menu_link">Kinh tế <i class="fas fa-chevron-right"></i>
+                                        <ul class="sub-menu-2">
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">QTDN - Marketing & Sales</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">QHCC - PR & Tổ chức sự kiện</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">TMĐT - Digital & Online Marketing</a>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="./course.html" class="sub-menu_link">Du lịch - Nhà hàng - Khách sạn <i
+                                            class="fas fa-chevron-right"></i>
+                                        <ul class="sub-menu-2">
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">Hướng dẫn viên du lịch</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">Quản trị Khách sạn</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">Quản trị Nhà hàng (dự kiến)</a>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="./course.html" class="sub-menu_link">Cơ khí, (Điện) tự động hóa <i
+                                            class="fas fa-chevron-right"></i>
+                                        <ul class="sub-menu-2">
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">CN kỹ thuật điều khiển và tự động
+                                                    hóa</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">CN kỹ thuật điện, điện tử</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">Điện công nghiệp</a>
+                                            </li>
+                                            <li class="sub-menu_item">
+                                                <a href="./course.html" class="sub-menu_link">CN kỹ thuật cơ khí</a>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="./course.html" class="sub-menu_link">Thẩm mỹ - Làm đẹp</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="./course.html" class="sub-menu_link">Tiếng Anh - Top Notch</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="blog.html">TIN TỨC POLY</a>
+                            <div class="nav-item__line"></div>
+                        </li>
+                        <li>
+                            <a href="contact.html">LIÊN HỆ<i class="fas fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu_item">
+                                    <a href="contact.html" class="sub-menu_link">Fpt PolyTechnic Hồ Chí Minh</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="contact.html" class="sub-menu_link">Fpt PolyTechnic Tây Nguyên</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="contact.html" class="sub-menu_link">Fpt PolyTechnic Đà Nẵng</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="contact.html" class="sub-menu_link">Fpt PolyTechnic Hà Nội</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a href="contact.html" class="sub-menu_link">Fpt PolyTechnic Cần Thơ</a>
+                                </li>
+                            </ul>
+                            <div class="nav-item__line"></div>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="openNav()"></i>
+            </nav>
+            <div class="nav-hidden">
+                <nav class="nav sticky-nav">
+                    <a href="index.html"><img src="./assets/images/logo2.png"></a>
+                    <div class="nav__link">
+                        <i class="fas fa-times" onclick="closeNav()"></i>
+                        <ul>
+                            <li>
+                                <a href="index.html">TRANG CHỦ</a>
+                                <div class="nav-item__line"></div>
+                            </li>
+                            <li>
+                                <a href="about.html" style="color: red;">TUYỂN SINH<i class="fas fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu_item">
+                                        <a href="" class="sub-menu_link">Tuyển sinh 2021</a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="" class="sub-menu_link">Đăng kí trực tuyến</a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="" class="sub-menu_link">Học phí</a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="" class="sub-menu_link">Trắc nghiệm nghề nghiệp</a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="" class="sub-menu_link">Những điều cần biết <i
+                                                class="fas fa-chevron-right"></i>
+                                            <ul class="sub-menu-2">
+                                                <li class="sub-menu_item">
+                                                    <a href="" class="sub-menu_link">Quy chế tuyển sinh</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="" class="sub-menu_link">Chính sách ưu đãi</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="" class="sub-menu_link">Phiếu đăng kí học</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="" class="sub-menu_link">Hướng dẫn nhập học</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="" class="sub-menu_link">Câu hỏi thường gặp</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="" class="sub-menu_link">Về FPT Education</a>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="nav-item__line" style="width: 100%;"></div>
+                            </li>
+                            <li>
+                                <a href="./course.html">CHƯƠNG TRÌNH ĐÀO TẠO<i class="fas fa-angle-down"></i></a>
+                                <div class="nav-item__line"></div>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu_item">
+                                        <a href="./course.html" class="sub-menu_link">Công nghệ thông tin <i
+                                                class="fas fa-chevron-right"></i>
+                                            <ul class="sub-menu-2">
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">Thiết kế
+                                                        Website</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">Thiết kế đồ họa</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">CNTT - Ứng dụng
+                                                        phần
+                                                        mềm</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">Lập trình máy tính
+                                                        -
+                                                        Thiết bị di
+                                                        động</a>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="./course.html" class="sub-menu_link">Kinh tế <i
+                                                class="fas fa-chevron-right"></i>
+                                            <ul class="sub-menu-2">
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">QTDN - Marketing &
+                                                        Sales</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">QHCC - PR & Tổ chức
+                                                        sự
+                                                        kiện</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">TMĐT - Digital &
+                                                        Online
+                                                        Marketing</a>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="./course.html" class="sub-menu_link">Du lịch - Nhà hàng - Khách sạn
+                                            <i class="fas fa-chevron-right"></i>
+                                            <ul class="sub-menu-2">
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">Hướng dẫn viên du
+                                                        lịch</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">Quản trị Khách
+                                                        sạn</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">Quản trị Nhà hàng
+                                                        (dự
+                                                        kiến)</a>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="./course.html" class="sub-menu_link">Cơ khí, (Điện) tự động hóa <i
+                                                class="fas fa-chevron-right"></i>
+                                            <ul class="sub-menu-2">
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">CN kỹ thuật điều
+                                                        khiển
+                                                        và tự động
+                                                        hóa</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">CN kỹ thuật điện,
+                                                        điện
+                                                        tử</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">Điện công
+                                                        nghiệp</a>
+                                                </li>
+                                                <li class="sub-menu_item">
+                                                    <a href="./course.html" class="sub-menu_link">CN kỹ thuật cơ
+                                                        khí</a>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="./course.html" class="sub-menu_link">Thẩm mỹ - Làm đẹp</a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="./course.html" class="sub-menu_link">Tiếng Anh - Top Notch</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="blog.html">TIN TỨC POLY</a>
+                                <div class="nav-item__line"></div>
+                            </li>
+                            <li>
+                                <a href="contact.html">LIÊN HỆ<i class="fas fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu_item">
+                                        <a href="contact.html" class="sub-menu_link">Fpt PolyTechnic Hồ Chí Minh</a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="contact.html" class="sub-menu_link">Fpt PolyTechnic Tây Nguyên</a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="contact.html" class="sub-menu_link">Fpt PolyTechnic Đà Nẵng</a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="contact.html" class="sub-menu_link">Fpt PolyTechnic Hà Nội</a>
+                                    </li>
+                                    <li class="sub-menu_item">
+                                        <a href="contact.html" class="sub-menu_link">Fpt PolyTechnic Cần Thơ</a>
+                                    </li>
+                                </ul>
+                                <div class="nav-item__line"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <i class="fas fa-bars" onclick="openNav()"></i>
+                </nav>
+            </div>
+            <!-- <h1>About Us</h1> -->
+        </header>
+
+        <main class="about-us">
+            <!-------------about us content----------------->
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <h1>We are the world's largest university</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.</p>
+                        <a href="" class="nav_btn red_btn">EXPLORE NOW</a>
+                    </div>
+                    <div class="col l-8 m-8 c-12">
+                        <img src="./assets/images/about.jpg">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <section class="footer-widgets">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12">
+                            <div class="footer-widgets_left">
+                                <img src="./assets/images/logo2.png">
+                                <div class="social-links">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-wikipedia-w"></i></a>
+                                    <a href=""><i class="fab fa-tiktok"></i></a>
+                                </div>
+                                <div class="contact-info">
+                                    <h2>THÔNG TIN LIÊN HỆ</h2>
+                                    <p>Điện thoại: (024) 7300 1955</p>
+                                    <p>Email: caodang@fpt.edu.vn</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="training-basis">
+                                <h2 style="margin-bottom: 20px;">HỆ THỐNG CƠ SỞ ĐÀO TẠO</h2>
+                                <div class="training-basis_item">
+                                    <h3>Cơ sở Hà Nội</h3>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Tòa nhà FPT Polytechnic, Phố Trịnh Văn Bô, Nam Từ Liêm, Hà Nội.
+                                    </p>
+                                    <!-- <p>
+                                        <i class="fas fa-phone-alt"></i>
+                                        (024) 7300 1955
+                                    </p> -->
+                                </div>
+                                <div class="training-basis_item">
+                                    <h3>Cơ sở Đà Nẵng</h3>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Số 137 Nguyễn Thị Thập, Phường Hòa Minh, Quận Liên Chiểu, TP. Đà Nẵng.
+                                    </p>
+                                    <!-- <p>
+                                        <i class="fas fa-phone-alt"></i>
+                                        (0236) 3710 999
+                                    </p> -->
+                                </div>
+                                <div class="training-basis_item">
+                                    <h3>Cơ sở Cần Thơ</h3>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Số 288, Nguyễn Văn Linh, phường An Khánh, quận Ninh Kiều, Tp. Cần Thơ.
+                                    </p>
+                                    <!-- <p>
+                                        <i class="fas fa-phone-alt"></i>
+                                        (0292) 7300 468
+                                    </p> -->
+                                </div>
+                                <div class="training-basis_item">
+                                    <h3>Cơ sở Hồ Chí Minh</h3>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Văn phòng Tuyển sinh: 778/B1 Nguyễn Kiệm, P.4, Q. Phú Nhuận, TP. Hồ Chí Minh.
+                                    </p>
+                                    <!-- <p>
+                                        <i class="fas fa-phone-alt"></i>
+                                        (028) 6252 3434
+                                    </p> -->
+                                </div>
+                                <div class="training-basis_item">
+                                    <h3>Cơ sở Tây Nguyên</h3>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Tổ dân phố 8, phường Tân An, TP. Buôn Mê Thuột, Đắk Lắk.
+                                    </p>
+                                    <!-- <p>
+                                        <i class="fas fa-phone-alt"></i>
+                                        (0262) 355 5678
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12" style="padding:0 2%;">
+                            <div class="fb-page" data-href="https://www.facebook.com/fpt.poly/" data-tabs="timeline"
+                                data-width="340" data-height="" data-small-header="false"
+                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/fpt.poly/" class="fb-xfbml-parse-ignore"><a
+                                        href="https://www.facebook.com/fpt.poly/">Cao đẳng thực hành FPT Polytechnic</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p style="text-align: center;">Made with <i class="far fa-heart" style="color: #777;"></i> by Duyvqph18088
+            </p>
+        </footer>
+    </div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0"
+        nonce="Jx8BRuUm"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 135) {
+                $('.sticky-nav').addClass('fixed');
+            } else {
+                $('.sticky-nav').removeClass('fixed');
+            }
+        });
+    </script>
+</body>
+
+</html>
