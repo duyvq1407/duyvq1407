@@ -174,22 +174,6 @@ nav .fas{
     font-size: 1.4rem;
     color: white;
 }
-.nav__btn{
-    border: 1px solid white;
-    padding: 12px 34px;
-    text-decoration: none;
-    color: white;
-    font-size: 1.4rem;
-    cursor: pointer;
-    position: relative;
-}
-.nav__btn:hover{
-    background-color: #f44336;
-    border: 1px solid #f44336;
-    transition: 1s;
-    color: #fff;
-    text-decoration: none;
-}
 
 /* -----------------course----------------------- */
 .course,.campus,.influencer,.testimonials{
@@ -416,7 +400,6 @@ p{
 .footer-widgets{
     background-color: #192041;
     color: #fff;
-    position: relative;
     border-top: 10px solid #f7941d;
     margin-top: 100px;
     padding: 30px 5%;
@@ -523,23 +506,49 @@ p{
     color: #fff;
     background-repeat: no-repeat;
 }
-.sub-header h1{
-    margin-top: -50px;
-}
 .about-us{
-    width: 90%;
-    margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
-}
-.about-us img{
+    background-image: url(../images/g.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
+    margin-top: 70px;
+    padding: 50px 60px;
 }
-.about-us h1{
-    padding-top: 0 ;
+
+.about-us .title h1{
+    font-size: 70px;
+    color: #fff;
 }
-.about-us p{
-    padding: 15px 0 40px;
+
+.about-us .title p{
+    max-width: 730px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+/* ___________________________________________________ */
+
+
+/* --------------------BTN------------------------ */
+
+.nav__btn{
+    border: 1px solid white;
+    padding: 12px 34px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: relative;
+}
+.nav__btn:hover{
+    background-color: #f44336;
+    border: 1px solid #f44336;
+    transition: 1s;
+    color: #fff;
+    text-decoration: none;
 }
 
 .nav__btn-red{
@@ -566,51 +575,28 @@ p{
     color: #fff;
     text-decoration: none;
 }
+
+.nav__btn-dark{
+    background-color: #192041;
+    border: 1px solid #192041;
+}
+.nav__btn-dark:hover{
+    background-color: #ed1c94;
+    border: 1px solid #ed1c94;
+}
+
 .active{
     color: #fff !important;
     background-color: #f44336;
 }
+/* ___________________________________________________ */
+
 /* -----------------Blog page content--------------- */
-.blog-content{
-    width: 90%;
-    margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
-}
-.box-left img{
-    width: 100%;
-}
-.box-left h2{
-    font-size: 20px;
-    padding: 20px 0 35px;
-}
-.box-left p{
-    color: #999;
-    padding: 0;
-    font-size: 1.4rem;
-}
 
-.box-right h3{
-    background: #f44336;
-    color: #fff;
-    padding: 7px 0 ;
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.box-right span{
-    color: #999;
-    padding: 0;
-    font-size: 1.4rem;
-}
-.box-right div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #555;
-    padding: 8px;
-}
 
+/* _________________________________________________________ */
+
+/* ----------------------Form đăng kí ------------------- */
 .comment-box{
     border: 1px solid #ccc;
     margin: 50px 0;
@@ -635,6 +621,8 @@ p{
 .comment-form button{
     margin: 10px 0;
 }
+
+/*___________________________________________________________*/
 
 /* ---------------------contact us page---------------------- */
 .contact-page{
@@ -737,7 +725,7 @@ p{
     display: inline-block;
 }
 .tab li button{
-    /* min-width: 10px; */
+    min-width: 137px;
 }
 .tab-link{
     color: #000;
@@ -774,28 +762,15 @@ p{
 }
 .form-dangki{
     width: 100%;
-    margin: auto;
-    margin-top: 70px;
-    padding: auto;
-    background-image: url(../images/banner7.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: none;
+    background-color: #F7941D;
+    border-radius: 30px 60px;
     margin: 50px auto;
-    padding: 10px 20px;
+    padding: 30px 20px;
 }
 .form-dangki input,
 .form-dangki select{
-    width: 65%;
+    width: 100%;
     background-color: white;
-}
-.nav__btn-dark{
-    background-color: #192041;
-    border: 1px solid #192041;
-}
-.nav__btn-dark:hover{
-    background-color: #ed1c94;
-    border: 1px solid #ed1c94;
 }
 
 .nganh-lien-quan{
@@ -863,7 +838,160 @@ p{
     background-color: white;
     color: black;
 }
+/* ______________________________________________ */
 
+/* -----------------Tin tức------------------------ */
+.new-page{
+    width: 90%;
+    margin: auto;
+}
+
+.news-content{
+    width: 90%;
+    margin: auto;
+}
+
+.news-content .title hr{
+    height: 5px;
+    background-color: #F7941D;
+    border: none;
+}
+
+.news-content .title h1{
+    color: #F7941D;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 7px 0 20px 0;
+}
+
+.news-content section{
+    margin-bottom: 30px;
+}
+
+.news-content .left a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.8rem;
+    transition: color 0.5s;
+}
+
+.news-content .left h2{
+    line-height: 2.2rem;
+    margin: 10px 0;
+}
+
+.news-content .left p{
+    color: #555;
+    padding: 0;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+}
+
+.news-content .left a:hover{
+    color: #F7941D;
+}
+
+.news-content .right img{
+    width: 117px;
+    height: 67px;
+    float: left;
+    margin-right: 3px;
+}
+
+.news-content .right ul li{
+    float: left;
+    /* margin: 6px 0; */
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.news-content .right ul li:first-child{
+    padding-top: 0;
+}
+.news-content .right ul li:last-child{
+    border-bottom: none;
+}
+
+.news-content .right h2 a{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.news-content .right h2 a:hover{
+    color: #F7941D;
+}
+
+.custom_scroll {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.news-content aside{
+    padding-left: 45px;
+}
+
+.box-links{
+}
+
+.list-link{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.list-link-item{
+    border: solid 1px #f7941d;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 2px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.list-link-item:hover{
+    background-color: #f7941d;
+}
+
+.list-link-item:hover .icon{
+    background-position-x: -62px !important;
+}
+
+.list-link-item a{
+    margin-bottom: 0;
+    display: inline-block;
+    text-decoration: none;
+    border-right: solid 1px #dcdcdc;
+    color: #333;
+    padding: 10px 0px 10px 5px;
+    width: 80%;
+}
+
+.list-link-item .icon{
+    width: 20%;
+    background: url(../images/ICON.png) no-repeat;
+    height: 39px;
+    float: right;
+}
+
+.tin-hot{
+    margin-bottom: 25px;
+}
+
+.tin-hot .right ul li{
+    list-style: none;
+}
+
+.tin-hot .right ul li:last-child{
+    border-bottom: 1px solid #ccc;
+}
+/* __________________________________________________ */
 
 
 
@@ -1028,17 +1156,36 @@ p{
     } */
     .entry-content .tab li button{
         /* min-height: 78px; */
-        min-width: 150px;
+        min-width: 223px;
     }
     .entry-content .tab{
         display: flex;
         flex-wrap: wrap;
-        max-height: 140px;
+        max-height: 150px;
         flex-direction: column;
         align-items: center;
     }
     .entry-content .tab li{
         margin-top: 3px;
+    }
+
+    .about-us .title h1{
+        font-size: 50px;
+    }
+
+    .form-dangki{
+        Width: 100%;
+        padding: 30px;
+        border-radius: 15px;
+    }
+
+    
+    .news-content article .left a{
+        font-size: 1.6rem;
+    }
+
+    .news-content article .left p{
+        font-size: 1.1rem;
     }
 /* ---------------------------- */
 }
