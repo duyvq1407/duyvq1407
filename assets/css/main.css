@@ -331,7 +331,7 @@ p{
 }
 .testimonials .product p{
     padding: 0;
-    min-height: 65px;
+    min-height: 90px;
 }
 .testimonials .product h3{
     margin-top: 15px;
@@ -725,7 +725,7 @@ p{
     display: inline-block;
 }
 .tab li button{
-    min-width: 137px;
+    min-width: 50px;
 }
 .tab-link{
     color: #000;
@@ -1080,6 +1080,7 @@ p{
     }
     .testimonials p{
         font-size: 1.2rem;
+        min-height: 90px !important;
     }
     .influencer h1{
         font-size: 1.6rem;
